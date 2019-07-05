@@ -1,6 +1,8 @@
 import 'dart:async';
-import 'package:flutter/material.dart';
+
 import 'package:camera/camera.dart';
+import 'package:flutter/material.dart';
+
 import 'home.dart';
 
 List<CameraDescription> cameras;
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'tflite real-time detection',
+      title: 'Flutter Space',
       theme: ThemeData(
         brightness: Brightness.dark,
       ),
