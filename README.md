@@ -1,4 +1,4 @@
-# flutter_space
+# Flutter Space
 
 An App for Blind People which speaks whatever the object is in front of them.
 
