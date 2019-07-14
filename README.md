@@ -7,7 +7,7 @@ An App for Blind People which speaks whatever the object is in front of them.
 <ul><li>Detection of Object </li></ul>
 <ul><li>Speak the Object Name if Confidence in Class is greater than 50 </li></ul>
 
-<img src="images/vase.jpeg />
+<img src="images/vase.jpeg" />
 
 ## Contributing 
 
