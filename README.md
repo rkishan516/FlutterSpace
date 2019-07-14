@@ -2,7 +2,7 @@
 
 An App for Blind People which speaks whatever the object is in front of them.
 
-##Feature
+## Feature
 
 <ul><li>Detection of Object </li></ul>
 <ul><li>Speak the Object Name if Confidence in Class is greater than 50 </li></ul>
