@@ -28,8 +28,8 @@ class _BndBoxState extends State<BndBox> {
   FlutterTts flutterTts = new FlutterTts();
   TtsState ttsState = TtsState.stopped;
 
-  void _getVoice(String value) async {
-    if (ttsState != TtsState.playing) {
+  void _getVoice(String value, double data) async {
+    if (ttsState != TtsState.playing && (data) > 50.0) {
       var result = await flutterTts.speak(value);
       if (result == 1) setState(() => ttsState = TtsState.playing);
     }
@@ -49,7 +49,8 @@ class _BndBoxState extends State<BndBox> {
         var _y = re["rect"]["y"];
         var _h = re["rect"]["h"];
         var scaleW, scaleH, x, y, w, h;
-        _getVoice("There is " + re["detectedClass"] + " in front of you");
+        _getVoice("There is " + re["detectedClass"] + " in front of you",
+            (re["confidenceInClass"] * 100));
 
         if (widget.screenH / widget.screenW >
             widget.previewH / widget.previewW) {

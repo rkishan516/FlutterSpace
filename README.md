@@ -1,16 +1,16 @@
 # flutter_space
 
-A new Flutter project.
+An App for Blind People which speaks whatever the object is in front of them.
 
-## Getting Started
+##Feature
 
-This project is a starting point for a Flutter application.
+<ul><li>Detection of Object </li></ul>
+<ul><li>Speak the Object Name if Confidence in Class is greater than 50 </li></ul>
 
-A few resources to get you started if this is your first Flutter project:
+<img src="images/vase.jpeg />
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
+## Contributing 
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+Contributions are welcome! However, if it's going to be a major change, please create an issue first. Before starting to work 
+on something, please comment on a specific issue and say you'd like to work on it.
+
