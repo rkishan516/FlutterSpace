@@ -9,7 +9,6 @@ import 'camera.dart';
 
 const String ssd = "SSD MobileNet";
 const String yolo = "Tiny YOLOv2";
-const String mnet = "Mobilenet_v2";
 
 class HomePage extends StatefulWidget {
   final List<CameraDescription> cameras;
@@ -40,11 +39,6 @@ class _HomePageState extends State<HomePage> {
           labels: "assets/yolov2_tiny.txt",
         );
         break;
-      case mnet:
-        res = await Tflite.loadModel(
-          model: "assets/mobilenet_v2_1.0_224.tflite",
-          labels: "assests/mobilenet_v2_1.0_224.txt",
-        );
       default:
         res = await Tflite.loadModel(
             model: "assets/ssd_mobilenet.tflite",
