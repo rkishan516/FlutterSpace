@@ -1,18 +1,17 @@
-name: Dart CI
-
-on: [push]
-
+on: [push, pull_request]
+name: Test, Build and Release apk
 jobs:
   build:
-
+    name: Build and Release APK
     runs-on: ubuntu-latest
-
-    container:
-      image:  google/dart:latest
-
     steps:
     - uses: actions/checkout@v1
-    - name: Install dependencies
-      run: pub get
-    - name: Run tests
-      run: pub run test
+    - uses: actions/setup-java@v1
+      with:
+        java-version: '12.x'
+    - uses: subosito/flutter-action@v1
+      with:
+        flutter-version: '1.9.1+hotfix.6'
+    - run: flutter pub get
+    # - run: flutter test
+    - run: flutter build apk --debug --split-per-abi
